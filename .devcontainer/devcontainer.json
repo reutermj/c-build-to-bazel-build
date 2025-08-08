@@ -1,0 +1,16 @@
+{
+  "name": "Bazel",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bazelbuild.vscode-bazel",
+        "mhutchie.git-graph",
+        "github.copilot"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/tools"
+  }
+}

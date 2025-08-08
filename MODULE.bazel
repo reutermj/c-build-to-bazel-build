@@ -1,0 +1,3 @@
+"""Module for c-build-to-bazel-build project."""
+
+module(name = "c-build-to-bazel-build")
