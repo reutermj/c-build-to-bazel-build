@@ -1,9 +1,16 @@
-load("@aspect_rules_py//py:defs.bzl", "py_binary")
+load("@aspect_rules_ts//ts:defs.bzl", "ts_project")
+load("@aspect_rules_js//js:defs.bzl", "js_binary")
 
-py_binary(
-    name = "main",
-    srcs = ["main.py"],
+ts_project(
+    name = "main_ts",
+    srcs = ["main.ts"],
     deps = [
-        "@pypi//anthropic",
+        "//:node_modules/@anthropic-ai/sdk",
     ],
+)
+
+js_binary(
+    name = "main",
+    data = [":main_ts"],
+    entry_point = "main.js",
 )

@@ -1,0 +1,11 @@
+{
+  "name": "c-build-to-bazel-build",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.59.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2"
+  }
+}

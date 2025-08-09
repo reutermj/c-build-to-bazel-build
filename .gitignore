@@ -2,3 +2,4 @@ bazel-bin
 bazel-c-build-to-bazel-build
 bazel-out
 bazel-testlogs
+node_modules
