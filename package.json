@@ -6,6 +6,7 @@
     "@anthropic-ai/sdk": "0.59.0"
   },
   "devDependencies": {
+    "@types/node": "24.2.1",
     "typescript": "5.9.2"
   }
 }

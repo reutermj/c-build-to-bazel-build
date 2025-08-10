@@ -6,11 +6,15 @@ ts_project(
     srcs = ["main.ts"],
     deps = [
         "//:node_modules/@anthropic-ai/sdk",
+        "//:node_modules/@types/node",
     ],
 )
 
 js_binary(
     name = "main",
-    data = [":main_ts"],
+    data = [
+        ":main_ts",
+        "stuff.txt",
+    ],
     entry_point = "main.js",
 )
